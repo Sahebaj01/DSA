@@ -1,0 +1,11 @@
+#Automorphic is a number which is equal to last digits of its square
+def auto(n):
+    sq=n*n
+    while n>0:
+        if sq%10!=n%10:
+            print('not automorphic')
+        n//=10
+        sq//=10
+    print("automorphic")
+n=25
+auto(n)
